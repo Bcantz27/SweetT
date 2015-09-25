@@ -9,18 +9,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sweet T</title>
+    <title>Trevan McClure</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 
     <!-- Sound Cloud -->
     <script src="https://w.soundcloud.com/player/api.js"></script>
@@ -34,7 +33,14 @@
 </head>
 
 <body id="page-top" class="index">
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -46,7 +52,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Sweet T</a>
+                <a class="navbar-brand" href="#page-top">Trevan</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,101 +62,107 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
                         <a href="#music">Music</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#shows">Shows</a>
+                        <a href="#video">Video</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#media">Media</a>
                     </li>
                     <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
                         <a href="#contact">Contact</a>
+                    </li>
+                    <li id="maillist">
+                        <a href="#">Mail List</a>
+                        <div id="mc_embed_signup">
+                            <form action="//ModernClassix.us11.list-manage.com/subscribe/post?u=f4291874a0d28db66079cf370&amp;id=4dc0dd7eb7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <input style="width: 90%;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;">
+                                        <input type="text" name="b_f4291874a0d28db66079cf370_4dc0dd7eb7" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+            <div id="social-cont" class="text-center center-block">
+                <a href="https://instagram.com/trevanmusic" target="_blank"><i id="social" class="fa fa-instagram fa-3x"></i></a>
+                <a href="https://www.facebook.com/trevanmusic" target="_blank"><i id="social" class="fa fa-facebook-square fa-3x"></i></a>
+                <a href="https://twitter.com/Trevanmusic" target="_blank"><i id="social" class="fa fa-twitter fa-3x"></i></a>
+                <a href="https://www.youtube.com/user/trevanmcclure/videos" target="_blank"><i id="social" class="fa fa-youtube fa-3x"></i></a>
+            </div>
         </div>
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header class="top-to-bottom">
-        <div class="container top" >
-            <div class="row">
-                <div class="col-xs-12">
-                    <img src="./img/main.jpg" alt="" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- Carousel -->
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
 
-    <!-- Portfolio Grid Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img style="height: 400px;margin: auto;" src="./img/slide1.jpg" alt="...">
+                <div class="carousel-caption">
+                    <!--<h3>Caption Text</h3>-->
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3>Trevan McClure</h3>
-                    <img class="img-responsive img-circle" src="img/home-bg.jpg">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/pages/Trevan/228161517197671?sk=app_2405167945" class="btn-social btn-default"><i class="fa fa-fw fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/TrevanMcClure" class="btn-social btn-default"><i class="fa fa-fw fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/user/trevanmcclure/videos" class="btn-social btn-default"><i class="fa fa-fw fa-youtube"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://instagram.com/trevanmcclure" class="btn-social btn-default"><i class="fa fa-fw fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                    <h3>Inspirations</h3>
-                    <hr>
-                    <p>Linkin Park</p>
-                    <p>Rage Against the Machine</p>
-                    <p>Incubus</p>
-                    <p>Foo Fighters</p>
-                    <hr>
+            <div class="item">
+                <img style="height: 400px;margin: auto;" src="./img/slide2.jpg" alt="...">
+                <div class="carousel-caption">
+                    <!--<h3>Caption Text</h3>-->
                 </div>
-                <div class="col-sm-5">
-                    <p style="font-size: 18px; padding: 5px;">Trevan McClure (aka "Sweet T"), born in Northridge Hospital on 4/20/1990, began his “ad-venture” into music long BEFORE he was even born. “My mom use to go to my dad’s concerts when she was pregnant with me. They were married to one of his songs, and I was born to his song ‘Spring’… Wait… Is it weird that I was born in the Spring to a song called Spring?”.
-“My musical career didn’t really take off until I decided… I’m… gonna bang… those pots and pans. I mean sure, what did I know, I wasn’t even a year old… I had no idea what I was getting myself into. Everyone knows… playing pots and pans only gets you so far… But I did it… and I’ve never looked back.”</p>
-                </div>
-                <div class="col-sm-4">
-                    <a class="twitter-timeline" href="https://twitter.com/TrevanMcClure" data-widget-id="601923664393670656">Tweets by @TrevanMcClure</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <div class="item">
+                <img style="height: 400px; margin: auto;" src="./img/slide3.jpg" alt="...">
+                <div class="carousel-caption">
+                    <!--<h3>Caption Text</h3>-->
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <!-- end Carousel -->
 
     <!-- Music Section -->
-    <section class="success" id="music">
+    <section class="smokegrey" id="music">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Music</h2>
+                    <h2 class="sectionhead">Music</h2>
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-8 col-lg-offset-2">
                     <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/15542984&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false;buying=true"></iframe>
                 </div>
 
-                <div class="col-lg-4 col-lg-offset-1">
-                    <p style="text-align: center">The first of 5 singles off of Sweet T's "SweeT Teaser," pre-luding his debut Mixtape "SweeT Release"
+<!--                <div class="col-lg-4 col-lg-offset-1">
+                    <p style="text-align: center" class="text">The first of 5 singles off of Sweet T's "SweeT Teaser," pre-luding his debut Mixtape "SweeT Release"
 Featuring members of his SweeT Fleet
 <br><br>
 Find it on iTunes, Spotify, Amazon, Bandcamp, Beatport, and MORE </p>
@@ -161,63 +173,112 @@ Find it on iTunes, Spotify, Amazon, Bandcamp, Beatport, and MORE </p>
                         <li class="list-group-item"><a href="http://trevanmcclure.bandcamp.com/">Bandcamp</a></li>
                         <li class="list-group-item"><a href="http://trevanmcclure.bandcamp.com/">Beatport</a></li>
                     </ul>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
 
-    <!-- Shows Section -->
-    <section id="shows">
+    <!-- Video Section -->
+    <section class="success" id="video">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Upcoming Shows</h2>
+                    <h2 class="sectionhead">Video</h2>
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-lg-offset-1 show">
-                    <p><span class="fa fa-clock-o"></span> 0:00 - 0:00<br>
-                    <span class="fa fa-map-marker"></span> Los Angeles, CA<br>
-                    <button class="btn btn-primary" href="#"><span class="fa fa-ticket"></span>Get Tickets</button></p>
-                </div>
-                <div class="col-lg-3 show">
-                    <p><span class="fa fa-clock-o"></span> 0:00 - 0:00<br>
-                    <span class="fa fa-map-marker"></span> Los Angeles, CA<br>
-                    <button class="btn btn-primary" href="#"><span class="fa fa-ticket"></span>Get Tickets</button></p>
-                </div>
-                <div class="col-lg-3 show">
-                    <p><span class="fa fa-clock-o"></span> 0:00 - 0:00<br>
-                    <span class="fa fa-map-marker"></span> Los Angeles, CA<br>
-                    <button class="btn btn-primary" href="#"><span class="fa fa-ticket"></span>Get Tickets</button></p>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <iframe id="ytplayer" type="text/html" width="100%" height="405"
+src="https://www.youtube.com/embed/?listType=user_uploads&list=trevanmcclure"
+                            frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Media Section -->
-    <section class="success" id="media">
+    <section class="smokegrey" id="media">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Media</h2>
+                    <h2 class="sectionhead">Media</h2>
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-                    <iframe src="http://widget.websta.me/in/trevanmcclure/?s=100&w=5&h=3&b=1&bg=18BC9C&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:575px; height: 345px" ></iframe>
+                
+                <div class="col-lg-4" >
+                    <h1 class="text-center subhead">Instagram</h1>
+					<script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/955b9c382a22e71d4eb3ca2a909baf5a166b4123.html" id="instansive_955b9c382a" name="instansive_955b9c382a"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                </div>
+                <div class="col-lg-3" style="margin-right: 30px;margin-left: 30px">
+                    <h1 class="text-center subhead">Twitter</h1>
+                    <a id="twitterfeed" target="_blank" class="twitter-timeline" href="https://twitter.com/TrevanMusic" data-widget-id="601923664393670656">Tweets by @TrevanMusic</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+                <div class="col-lg-4">
+                    <h1 class="text-center subhead">Facebook</h1>
+                    <div class="fb-page" data-href="https://www.facebook.com/trevanmusic" data-width="100%" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/trevanmusic"><a target="_blank" href="https://www.facebook.com/trevanmusic">Trevan Music</a></blockquote></div></div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="sectionhead">About</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5" style="text-align: center;">
+                    <h3 class="subhead">Trevan McClure</h3>
+                    <img class="img-responsive img-circle" style="width: 250px" src="img/home-bg.jpg" id="aboutpic">
+                    <div class="col-sm-6" style="text-align: center;">
+                        <h3 class="subhead">Inspirations</h3>
+                        <hr>
+                        <p>Charles McClure</p>
+                        <p>Joe Satriani</p>
+                        <p>Nirvana</p>
+                        <p>Max Martin</p>
+                        <p>Linkin Park</p>
+                        <p>BT</p>
+                        <p>Nine Inch Nails</p>
+                        <p>Eminem</p>
+                        <hr>
+                    </div>
+                    <div class="col-sm-6" style="text-align: center;">
+                        <h3 class="subhead">Genre</h3>
+                        <hr>
+                        <p>Alternative</p>
+                        <p>Rock</p>
+                        <p>Pop</p>
+                        <p>Hip-Hop</p>
+                        <p>Blues</p>
+                        <p>R&B</p>
+                        <p>Electronic</p>
+                        <p>Metal</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <p style="padding: 30px;" class="text">Trevan McClure (aka "Sweet T"), born in Northridge Hospital on 4/20/1990, began his “ad-venture” into music long BEFORE he was even born. “My mom use to go to my dad’s concerts when she was pregnant with me. They were married to one of his songs, and I was born to his song ‘Spring’… Wait… Is it weird that I was born in the Spring to a song called Spring?”.
+“My musical career didn’t really take off until I decided… I’m… gonna bang… those pots and pans. I mean sure, what did I know, I wasn’t even a year old… I had no idea what I was getting myself into. Everyone knows… playing pots and pans only gets you so far… But I did it… and I’ve never looked back.”</p>
+                </div>
+            </div>
+        </div>
+    </section>    
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section class="smokegrey" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
+                    <h2 class="sectionhead">Contact Me</h2>
                 </div>
             </div>
             <div class="row">
@@ -239,13 +300,6 @@ Find it on iTunes, Spotify, Amazon, Bandcamp, Beatport, and MORE </p>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-<!--                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>-->
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Message</label>
@@ -272,29 +326,29 @@ Find it on iTunes, Spotify, Amazon, Bandcamp, Beatport, and MORE </p>
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Los Angeles, CA</p>
+                        <h3 class="sectionhead" style="font-size: 54px;">Location</h3>
+                        <p class="subhead">Los Angeles, CA</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                        <h3 class="sectionhead" style="font-size: 42px;">Around the Web</h3>
                     <ul class="list-inline">
                         <li>
-                            <a href="https://www.facebook.com/pages/Trevan/228161517197671?sk=app_2405167945" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/pages/Trevan/228161517197671?sk=app_2405167945" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/TrevanMcClure" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a href="https://twitter.com/TrevanMcClure" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/user/trevanmcclure/videos" class="btn-social btn-outline"><i class="fa fa-fw fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/user/trevanmcclure/videos" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-youtube"></i></a>
                         </li>
                         <li>
-                            <a href="https://instagram.com/trevanmcclure" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+                            <a href="https://instagram.com/trevanmcclure" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
                         </li>
                     </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Blank</h3>
-                        <p></p>
+                        <a href="http://modernclassix.com"><img src="img/ModernClassixPub.png" class="img-rounded" style=" margin-top: 53px;width: 200px;"></a>
+                        <a href="http://modernclassix.com" class="text text-center" style="padding-left: 35px; font-size: 18px; color:white;">ModernClassix.com</a>
                     </div>
                 </div>
             </div>
@@ -304,6 +358,7 @@ Find it on iTunes, Spotify, Amazon, Bandcamp, Beatport, and MORE </p>
                 <div class="row">
                     <div class="col-lg-12">
                         Trevan McClure 2015
+                        <p style="font-size: 14px">Website created by <a style="color:white" href="http://bryancantz.me">Bryan Cantz</a></p>
                     </div>
                 </div>
             </div>
@@ -326,7 +381,7 @@ Find it on iTunes, Spotify, Amazon, Bandcamp, Beatport, and MORE </p>
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <!--<script src="js/cbpAnimatedHeader.js"></script>-->
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
